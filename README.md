@@ -1,7 +1,7 @@
 
 ## FindAndReplace [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/connectai-e/awesome-basescript)
 
-> 查找替换
+> 查找、替换多维表格中的数据
 
 ![image](https://github.com/ConnectAI-E/BaseScript-FindAndReplace/assets/110169811/925e9104-8282-4391-ac68-aeb6d8734789)
 
