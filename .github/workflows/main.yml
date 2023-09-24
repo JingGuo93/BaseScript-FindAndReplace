@@ -20,7 +20,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-          run_install: false
+          run_install: true
           dest: pnpm-lock.yaml
 
       - name: Build
