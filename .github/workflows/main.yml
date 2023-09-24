@@ -23,9 +23,7 @@ jobs:
           run_install: |
             - recursive: true
               args: [--frozen-lockfile, --strict-peer-dependencies]
-            - args: [--global, gulp, prettier, typescript]
-          dest: pnpm-lock.yaml
-
+              
       - name: Build
         run: pnpm run build
 
