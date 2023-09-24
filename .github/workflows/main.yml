@@ -22,7 +22,9 @@ jobs:
           version: 8
           run_install: |
             - recursive: true
-              args: [--frozen-lockfile, --strict-peer-dependencies]
+              cwd: ~/
+              args: [--frozen-lockfile]
+              dest: pnpm-lock.yaml
               
       - name: Build
         run: pnpm run build
