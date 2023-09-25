@@ -3,9 +3,9 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
-    branches: [master]
+    branches: [main]
 
 permissions:
   contents: write
@@ -17,15 +17,14 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
         with:
-          version: 8
-          run_install: |
-            - recursive: true
-              args: [--frozen-lockfile]
-              
+          node-version: 18
+          cache: npm
+      - run: npm install --frozen-lockfile
+
       - name: Build
-        run: pnpm run
+        run: npm run github:build
 
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
