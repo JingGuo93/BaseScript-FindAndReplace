@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "github:build": "tsc && vite build --base /BaseScript-FindAndReplace/",
     "preview": "vite preview"
   },
   "keywords": [],
